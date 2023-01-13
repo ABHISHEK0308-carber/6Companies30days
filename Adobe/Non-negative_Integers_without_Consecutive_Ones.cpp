@@ -15,10 +15,11 @@ public:
             int bit = (n >> k) & 1;
             if (bit == 1) {
                 ans += dp[k];
-                if (lastBit == 1) return ans; // Met consecutive ones in the binary representation!
+                if (lastBit == 1) 
+                    return ans;
             }
             lastBit = bit;
         }
-        return ans + 1; // Plus with n itself!
+        return ans + 1; 
     }
 };
